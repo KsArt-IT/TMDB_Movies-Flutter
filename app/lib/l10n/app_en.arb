@@ -1,0 +1,15 @@
+{
+    "@@locale": "en",
+    "appTitle": "TMDB Movies",
+    "@appTitle": {
+        "description": "The title of the application",
+        "type": "String",
+        "placeholders": {}
+    },
+    "topMoviesTitle": "Top Movies",
+    "@topMoviesTitle": {
+        "description": "The title of the Top Movies screen",
+        "type": "String",
+        "placeholders": {}
+    }
+}
