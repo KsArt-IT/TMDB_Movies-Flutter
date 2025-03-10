@@ -11,5 +11,6 @@
         "description": "The title of the Top Movies screen",
         "type": "String",
         "placeholders": {}
-    }
+    },
+    "moviesTitle": "Movies"
 }
