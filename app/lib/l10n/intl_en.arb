@@ -12,5 +12,14 @@
         "type": "String",
         "placeholders": {}
     },
-    "moviesTitle": "Movies"
+    "moviesTitle": "Movies",
+    "favoritesTitle": "Favorites",
+    "settingsTitle": "Settings",
+
+    "topTab": "Top",
+    "moviesTab": "Movies",
+    "favoriteTab": "Favorites",
+    "settingsTab": "Settings",
+
+    "-": ""
 }

@@ -79,6 +79,43 @@ class S {
   String get moviesTitle {
     return Intl.message('Movies', name: 'moviesTitle', desc: '', args: []);
   }
+
+  /// `Favorites`
+  String get favoritesTitle {
+    return Intl.message(
+      'Favorites',
+      name: 'favoritesTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Settings`
+  String get settingsTitle {
+    return Intl.message('Settings', name: 'settingsTitle', desc: '', args: []);
+  }
+
+  /// `Top`
+  String get topTab {
+    return Intl.message('Top', name: 'topTab', desc: '', args: []);
+  }
+
+  /// `Movies`
+  String get moviesTab {
+    return Intl.message('Movies', name: 'moviesTab', desc: '', args: []);
+  }
+
+  /// `Favorites`
+  String get favoriteTab {
+    return Intl.message('Favorites', name: 'favoriteTab', desc: '', args: []);
+  }
+
+  /// `Settings`
+  String get settingsTab {
+    return Intl.message('Settings', name: 'settingsTab', desc: '', args: []);
+  }
+
+  // skipped getter for the '-' key
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

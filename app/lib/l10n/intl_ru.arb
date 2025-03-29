@@ -2,5 +2,13 @@
     "@@locale": "ru",
     "appTitle": "База фильмов TMDB",
     "topMoviesTitle": "Лучшие фильмы",
-    "moviesTitle": "Фильмы"
+    "moviesTitle": "Фильмы",
+    "favoritesTitle": "Избранное",
+    "settingsTitle": "Настройки",
+    
+    "topTab": "Топ",
+    "moviesTab": "Фильмы",
+    "favoriteTab": "Избранное",
+    "settingsTab": "Настройки",
+    "-": ""
 }
