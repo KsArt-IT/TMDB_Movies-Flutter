@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:tmdb_movies/core/router/app_router.dart';
 import 'package:tmdb_movies/core/theme/app_theme.dart';
 import 'package:tmdb_movies/generated/l10n.dart';
-import 'package:tmdb_movies/ui/screen/main/main_screen.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 
 class TmdbMoviesApp extends StatelessWidget {
   const TmdbMoviesApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       onGenerateTitle: (context) => S.of(context).appTitle,
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
@@ -22,7 +22,7 @@ class TmdbMoviesApp extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: S.delegate.supportedLocales,
-      home: const MainScreen(),
+      routerConfig: router,
     );
   }
 }
