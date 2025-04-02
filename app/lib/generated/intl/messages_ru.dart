@@ -24,11 +24,11 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "appTitle": MessageLookupByLibrary.simpleMessage("База фильмов TMDB"),
     "favoriteTab": MessageLookupByLibrary.simpleMessage("Избранное"),
-    "favoritesTitle": MessageLookupByLibrary.simpleMessage(""),
+    "favoritesTitle": MessageLookupByLibrary.simpleMessage("Избранное"),
     "moviesTab": MessageLookupByLibrary.simpleMessage("Фильмы"),
     "moviesTitle": MessageLookupByLibrary.simpleMessage("Фильмы"),
     "settingsTab": MessageLookupByLibrary.simpleMessage("Настройки"),
-    "settingsTitle": MessageLookupByLibrary.simpleMessage("Settings"),
+    "settingsTitle": MessageLookupByLibrary.simpleMessage("Настройки"),
     "topMoviesTitle": MessageLookupByLibrary.simpleMessage("Лучшие фильмы"),
     "topTab": MessageLookupByLibrary.simpleMessage("Топ"),
   };
