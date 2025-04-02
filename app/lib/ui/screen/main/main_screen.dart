@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:intl/intl.dart';
 import 'package:tmdb_movies/generated/l10n.dart';
 
 class MainScreen extends StatelessWidget {
@@ -16,15 +17,8 @@ class MainScreen extends StatelessWidget {
       context,
     ).routerDelegate.currentConfiguration.uri.path.contains('detail');
 
-    // final title = GoRouter.of(context).routerDelegate.state.name;
-
-    String getTitle(int index) => switch (index) {
-      0 => s.topMoviesTitle,
-      1 => s.moviesTitle,
-      2 => s.favoriteTab,
-      3 => s.settingsTab,
-      _ => s.appTitle,
-    };
+    final routeName = GoRouter.of(context).routerDelegate.state.name ?? '';
+    final title = Intl.message(routeName);
 
     List<BottomNavigationBarItem> navBarItems = <BottomNavigationBarItem>[
       BottomNavigationBarItem(icon: Icon(Icons.home), label: s.topTab),
@@ -36,8 +30,7 @@ class MainScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: theme.colorScheme.inversePrimary,
-        // title: Text(title ?? ''),
-        title: Text(getTitle(navigationShell.currentIndex)),
+        title: Text(title),
         leading:
             isDetailScreen
                 ? IconButton(
