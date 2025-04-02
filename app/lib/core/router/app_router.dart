@@ -12,7 +12,7 @@ final GoRouter router = GoRouter(
         StatefulShellBranch(
           routes: [
             GoRoute(
-              name: "Top Movies",
+              name: "topMoviesTitle",
               path: '/top_movies',
               builder: (context, state) => const TopMoviesScreen(),
               routes: [
@@ -27,7 +27,7 @@ final GoRouter router = GoRouter(
         StatefulShellBranch(
           routes: [
             GoRoute(
-              name: "Movies",
+              name: "moviesTitle",
               path: '/movies',
               builder: (context, state) => const MoviesScreen(),
               routes: [
@@ -45,7 +45,7 @@ final GoRouter router = GoRouter(
         StatefulShellBranch(
           routes: [
             GoRoute(
-              name: 'Favorites',
+              name: 'favoritesTitle',
               path: '/favorites',
               builder: (context, state) => const FavoriteMoviesScreen(),
               routes: [
@@ -63,7 +63,7 @@ final GoRouter router = GoRouter(
         StatefulShellBranch(
           routes: [
             GoRoute(
-              name: "Settings",
+              name: "settingsTitle",
               path: '/settings',
               builder: (context, state) => const SettingsScreen(),
             ),
